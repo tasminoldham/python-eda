@@ -19,7 +19,7 @@ def load_csv_to_sqlalchemy(file_path, table_name):
     df.to_sql(table_name, con=engine, if_exists='replace', index=False)
     print(f"Data loaded into SQL Server table: {table_name}")
 
-# Main execution block
+
 if __name__ == "__main__":
     # Load books
     load_csv_to_sqlalchemy("cleaned_library_books.csv", "CleanedLibraryBooks")

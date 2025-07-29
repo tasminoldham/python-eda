@@ -71,18 +71,6 @@ def save_cleaned_data(df, output_file):
     df.to_csv(output_file, index=False)
     print(f"    → File saved: {output_file}")
 
-#def main():
-    #input_file = "03_Library Systembook.csv"
-    #output_file = "cleaned_library_books.csv"
-
-    #df = load_data(input_file)
-    #df = standardize_columns(df)
-    #df = clean_dates(df)
-    #df = convert_days_allowed(df)
-    #df = drop_missing_essentials(df)
-    #df = remove_bad_dates(df)
-    #df = calculate_borrow_stats(df)
-    #save_cleaned_data(df, output_file)
 
 def clean_books(input_file, output_file):
     df = load_data(input_file)

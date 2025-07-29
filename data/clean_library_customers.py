@@ -25,14 +25,6 @@ def save_cleaned_data(df, output_file):
     df.to_csv(output_file, index=False)
     print(f"    → File saved: {output_file}")
 
-#def main():
-    #input_file = "03_Library SystemCustomers.csv"
-    #output_file = "cleaned_library_customers.csv"
-
-    #df = load_data(input_file)
-    #df = standardize_columns(df)
-    #df = drop_missing_essentials(df)
-    #save_cleaned_data(df, output_file)
 
 def clean_customers(input_file, output_file):
     df = load_data(input_file)
@@ -43,5 +35,3 @@ def clean_customers(input_file, output_file):
 if __name__ == "__main__":
     clean_customers("03_Library SystemCustomers.csv", "cleaned_library_customers.csv")
 
-#if __name__ == "__main__":
-    #main()
