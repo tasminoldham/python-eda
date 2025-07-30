@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <title>Sum Calculator</title>
+</head>
+<body>
+    <h1>Enter Two Numbers</h1>
+    <form method="post">
+        <input type="text" name="num1" placeholder="First number" required>
+        <input type="text" name="num2" placeholder="Second number" required>
+        <button type="submit">Add</button>
+    </form>
+    {% if result is not none %}
+        <h2>Result: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
